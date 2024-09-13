@@ -108,27 +108,23 @@ class Exercicios:
         return soma
 
     def exercicio10(self):
-        primos = ""
-        for i in range(2,21,1):
-            if math.sqrt(i) == 0:
-                return f'Sem números primos'
-            else:
+        primos = "1\n2\n3\n5"
+        for i in range(5,21,1):
+            if i % 2 != 0 and i % 3 != 0 and i % 5 != 0:
                 primos += f'\n{i}'
         return primos
 
-    def exercicio11(self, num):
-        self.coletar(num)
-        raiz = math.sqrt(num)
-        for i in range(2,num,1):
-            if num % i == 0:
-                return f'Não é primo'
-            else:
-                return f'É primo.'
+    def exercicio11(self):
+        num = int(input('Informe um número: '))
+        if num == 2 or num == 3 or num == 5:
+            return f'O {num} é primo'
+        elif num % 2 != 0 and num % 3 != 0 or num == 5:
+            return f'O {num} é primo'
+        return f'O {num} não é primo'
 
-    def exercicio12(self, num):
-        self.coletar(num)
-        resultado = -1
-        for i in range(1,num,1):
+    def exercicio12(self,num):
+        resultado = 1
+        for i in range(1, num+1):
             resultado *= i
         return resultado
 
@@ -155,8 +151,85 @@ class Exercicios:
             return f'Esse número não é de Fibonacci'
 
     def exercicio15(self):
-        num = int(input('Digite um número: '))
-        return sum(int(i) for i in num)
+        num = int(input('Informe um número: '))
+        s = 0
+        while num:
+            s += num % 10
+            num //= 10
+        return s
+
+    def exercicio16(self):
+        num = int(input('Informe um número: '))
+        pares = ""
+        impares = ""
+
+        for i in range(1,num,1):
+            if i % 2 == 0:
+                pares += f'\n{i}'
+
+            if i % 2 != 0:
+                impares += f'\n{i}'
+
+        return f'{pares} \n {impares}'
+
+    def exercicio17(self):
+        num = int(input('Informe um número: '))
+        primos = ""
+        if num == 1:
+            return "1"
+        elif num == 2:
+            return f'2'
+        elif num == 3:
+            return f'2, 3'
+
+        for i in range(1,num,1):
+            if i % 2 != 0 and i % 3 != 0 or i == 5:
+                primos += f'\n{i}'
+        return primos
+
+    def exercicio18(self,num):
+        if num % 2 == 0:
+            num = num / 2
+            return num
+        else:
+            num = num * 3 + 1
+            return num
+
+
+
+
+
+
+    def exercicio19(self):
+        num = int(input('Informe um número: '))
+        pares =0
+        impares =0
+
+        for i in range(0,num):
+            if i % 2 == 0:
+                pares += i
+            else:
+                impares += i
+
+        return f'{pares}\n{impares}'
+
+    def exercicio20(self):
+        num = int(input('Informe um número: '))
+        divisores = 0
+
+        for i in range(1, num + 1):
+            if num % i == 0:
+                divisores += i
+
+        if divisores - num == num:
+            return f'{num} é um número perfeito.'
+        else:
+            return f'{num} não é um número perfeito.'
+
+
+
+
+
 
 
 

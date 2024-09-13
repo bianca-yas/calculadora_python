@@ -34,7 +34,12 @@ class Menu:
               '\n19. Exercicio 12' +
               '\n20. Exercicio 13' +
               '\n21. Exercicio 14' +
-              '\n22. Exercicio 15')
+              '\n22. Exercicio 15' +
+              '\n23. Exercicio 16' +
+              '\n24. Exercicio 17' +
+              '\n25. Exercicio 18' +
+              '\n26. Exercicio 19' +
+              '\n27. Exercicio 20')
 
     def coletar(self):
         self.num1 = int(input('Informe o primeiro número: '))
@@ -98,11 +103,10 @@ class Menu:
             elif self.opcao == 17:
                 print(f'Os números primos de 1 a 20 são: {self.exer.exercicio10()}')
             elif self.opcao == 18:
-                self.cooletar()
-                print(f'O número digitado é: {self.exer.exercicio11(self.num)}')
+                print(f'{self.exer.exercicio11()}')
             elif self.opcao == 19:
-                self.cooletar()
-                print(f'O fatorial do número digitado é: {self.exer.exercicio12(self.num)}')
+                num = int(input('Informe um número: '))
+                print(f'O fatorial do número digitado é: {self.exer.exercicio12(num)}')
             elif self.opcao == 20:
                 print(f'A sequencia de fibonacci até 10 é: {self.exer.exercicio13()}')
             elif self.opcao == 21:
@@ -110,6 +114,17 @@ class Menu:
                 print(f'{self.exer.exercicio14(self.num)}')
             elif self.opcao == 22:
                 print(f'A soma dos digitos é: {self.exer.exercicio15()}')
+            elif self.opcao == 23:
+                print(f'\n {self.exer.exercicio16()}')
+            elif self.opcao == 24:
+                print(f'\n {self.exer.exercicio17()}')
+            elif self.opcao == 25:
+                num = int(input('Informe um número: '))
+                print(f'\n {self.exer.exercicio18(num)}')
+            elif self.opcao == 26:
+                print(f'\n {self.exer.exercicio19()}')
+            elif self.opcao == 27:
+                print(f'\n {self.exer.exercicio20()}')
 
 
 
