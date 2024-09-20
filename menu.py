@@ -39,7 +39,27 @@ class Menu:
               '\n24. Exercicio 17' +
               '\n25. Exercicio 18' +
               '\n26. Exercicio 19' +
-              '\n27. Exercicio 20')
+              '\n27. Exercicio 20' +
+              '\n28. Exercicio 21' +
+              '\n29. Exercicio 22' +
+              '\n30. Exercicio 23' +
+              '\n31. Exercicio 24' +
+              '\n32. Exercicio 25' +
+              '\n33. Exercicio 26' +
+              '\n34. Exercicio 27' +
+              '\n35. Exercicio 28' +
+              '\n36. Exercicio 29' +
+              '\n37. Exercicio 30' +
+              '\n38. Exercicio 31' +
+              '\n39. Exercicio 32' +
+              '\n40. Exercicio 33' +
+              '\n41. Exercicio 34' +
+              '\n42. Exercicio 35' +
+              '\n43. Exercicio 36'+
+              '\n44. Exercicio 37' +
+              '\n45. Exercicio 38' +
+              '\n46. Exercicio 39' +
+              '\n47. Exercicio 40')
 
     def coletar(self):
         self.num1 = int(input('Informe o primeiro número: '))
@@ -125,6 +145,47 @@ class Menu:
                 print(f'\n {self.exer.exercicio19()}')
             elif self.opcao == 27:
                 print(f'\n {self.exer.exercicio20()}')
+            elif self.opcao == 28:
+                print(f'\n {self.exer.exercicio21()}')
+            elif self.opcao == 29:
+                num = int(input('Digite um número: '))
+                print(f'\n {self.exer.exercicio22(num)}')
+            elif self.opcao == 30:
+                print(f'\n As dimensões do retângulo são: {self.exer.exercicio23()}')
+            elif self.opcao == 31:
+                print(f'\n Sua idade em dias no total é: {self.exer.exercicio24()}')
+            elif self.opcao == 32:
+                print(f'\n {self.exer.exercicio25()}')
+            elif self.opcao == 33:
+                print(f'\n {self.exer.exercicio26()}')
+            elif self.opcao == 34:
+                print(f'\n O custo final é de: {self.exer.exercicio27()}')
+            elif self.opcao == 35:
+                print(f'A média desse aluno será: {self.exer.exercicio28()}')
+            elif self.opcao == 36:
+                print(f'O valor total pelas maçãs será de: {self.exer.exercicio29()}')
+            elif self.opcao == 37:
+                print(f'\n {self.exer.exercicio30()}')
+            elif self.opcao == 38:
+                print(f'\n O salário total é de: {self.exer.exercicio31()}')
+            elif self.opcao == 39:
+                print(f'\n {self.exer.exercicio32()}')
+            elif self.opcao == 40:
+                print(f'\n {self.exer.exercicio33()}')
+            elif self.opcao == 41:
+                print(f'\n {self.exer.exercicio34()}')
+            elif self.opcao == 42:
+                print(f'\n {self.exer.exercicio35()}')
+            elif self.opcao == 43:
+                print(f'\n A soma dos números inferiores a 40 é: {self.exer.exercicio36()}')
+            elif self.opcao == 44:
+                print(f'\n A média aritmética entre 15 e 100 é: {self.exer.exercicio37()}')
+            elif self.opcao == 45:
+                print(f'\n {self.exer.exercicio38()}')
+            elif self.opcao == 46:
+                print(f'\n {self.exer.exercicio39()}')
+            elif self.opcao == 47:
+                print(f'\n {self.exer.exercicio40()}')
 
 
 
